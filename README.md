@@ -2,34 +2,9 @@
 
 Next.js (App Router) client for the Uptrix public site and authentication flows, integrated with the Node/Mongo backend from [ArhamAzeem/node-test](https://github.com/ArhamAzeem/node-test.git).
 
-## Prerequisites
 
-- Node.js 20+
-- MongoDB (local or Atlas) for the API
-- SMTP or compatible mail setup if you want real OTP emails (optional for local smoke tests)
 
-## Backend setup
 
-```bash
-git clone https://github.com/ArhamAzeem/node-test.git
-cd node-test
-npm install
-```
-
-Create a `.env` in the backend folder with at least:
-
-- `MONGO_URI` — Mongo connection string  
-- `JWT_SECRET` — secret for signing tokens  
-- `PORT` — optional; defaults to `5000`  
-- Email variables expected by `sendEmail.js` (see that repo) if you send mail.
-
-Start the API:
-
-```bash
-npm start
-```
-
-Auth routes are mounted at `http://localhost:5000/api/v1/auth`.
 
 ## Frontend setup
 
